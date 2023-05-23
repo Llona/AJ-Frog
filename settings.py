@@ -1,6 +1,6 @@
 import enum
 
-SW_VERSION = 'v0.0.1'
+SW_VERSION = 'v0.0.2'
 
 TEMPLATE_FOLDER_NAME = 'template'
 ATTENDANCE_FOLDER_NAME = 'attendance'

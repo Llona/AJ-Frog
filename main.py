@@ -94,6 +94,9 @@ class GenAttendanceSummaryWeek(object):
 
     def fill_in_attendance_one_person(self, sheet, cell, all_attendance_list):
         attendance_one_person_list = self.get_attendance_by_name(all_attendance_list, cell.value)
+        if not attendance_one_person_list:
+            return
+
         attendance_datetime_list = utils.get_all_day(self.user_start_datetime, self.user_end_datetime)
 
         pre_month = attendance_datetime_list[0].month
